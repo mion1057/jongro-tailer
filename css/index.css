@@ -1,0 +1,474 @@
+/* 반응형 웹 _ 모바일 */
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* container */
+#container{
+    width: 100%;
+}
+.wrapper{
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 60px; 
+}
+.intro{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.intro h2{
+    font-weight: bold;
+}
+.intro p{
+    text-align: center;
+}
+/* header */
+header{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#header{
+    display: none;
+}
+#header_logo{
+    display: block;
+    position: absolute;
+    left: 20px;
+    background: url('../images/jongro2.png') no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+#header_logo h2{
+    display: none;
+}
+header nav{
+    height: 100px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header nav a#toggle{
+    display: block; /*모바일 모드에서 토글 메뉴는 보여야한다 */
+    position: absolute;
+    right: 20px;
+    padding: 20px;
+}
+#toggle{
+    position: absolute;
+    right: 0;
+    padding: 20px;
+}
+#toggle img{
+    width: 50px;
+    height: 50px;
+}
+header > nav > ul{
+    display: none; /*모바일 모드에서 주 메뉴 숨김*/
+    padding-top: 100px;
+}
+header > nav > ul > li{
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #e1e1e1;
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: #e1e1e1;
+}
+/* welcome */
+#welcome_intro{
+    height: 100%;
+}
+/* suitcase */
+#suitcase{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#business_img{
+    background:url('../images/suit01.jpg') no-repeat center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    justify-content: center;
+}
+#business_suit_intro{
+    text-align: center;
+    margin: 0 auto;
+}
+#separate_img{
+    background: url('../images/suit02.jpg') no-repeat center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    justify-content: center;
+}
+#separate_intro{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 300px;
+    height: 40px;
+    background-color: #b37813;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+}
+/* passion */
+
+#passion_wrap{
+    height: 100%;
+    margin-bottom: 10%;
+    position: relative;
+    overflow: hidden;
+}
+#passion_wrap #passion_img1, #passion_wrap #passion_img2, #passion_wrap #passion_img3{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#passion_img1{
+    background: url('../images/suit04.jpg') no-repeat center;
+    background-size: cover;
+}
+#passion_img2{
+    background: url('../images/suit05.jpg') no-repeat center;
+    background-size: cover;
+}
+#passion_img3{
+    background: url('../images/suit06.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#passion_wrap #passion_img1:hover::before{
+    background-color: #00000074;
+    transition-duration: 0.6s;
+    content: "비즈니스 슈트";
+    color: #fff;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    padding-top: 150px;
+}
+#passion_wrap #passion_img2:hover::before{
+    background-color: #00000074;
+    transition-duration: 0.6s;
+    content: "세퍼레이트";
+    color: #fff;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+#passion_wrap #passion_img3:hover::before{
+    background-color: #00000074;
+    transition-duration: 0.6s;
+    content: "종로의 맞춤정장";
+    color: #fff;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+
+
+/* seller */
+#seller{
+    background-color: #2d2e2f;
+    height: 100%;
+    color: #fff;
+}
+.post-slider{
+width:80%;
+margin:0px auto;
+position:relative;
+}
+.post-slider .silder-title{
+text-align:center;
+margin:30px auto;
+}
+.post-slider .next{
+position:absolute;
+top:50%;
+right:30px;
+font-size:2em;
+color:gray;
+cursor: pointer;
+}
+.post-slider .prev{
+position:absolute;
+top:50%;
+left:30px;
+font-size:2em;
+color:gray;
+    cursor: pointer;
+}
+.post-slider .post-wrapper{
+    width:94%;
+    height:500px;
+    margin:0px auto;
+    overflow: hidden;
+    padding:10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post{
+    width:300px;
+    height:400px;
+    margin:0px 10px;
+    display:inline-block;
+    background:white;
+    border-radius: 5px;
+}
+.post-slider .post-wrapper .post .post-info{
+    font-size:15px;
+    height:30%;
+    padding-left:10px;
+}
+.post-slider .post-wrapper .post .post-info a{
+    color: #000000;
+}
+.post-slider .post-wrapper .post .slider-image{
+    width:70%;
+    height:300px;
+    margin: 0 auto;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+/* footer */
+footer{
+   height:200px;
+   background: #000;
+   color: #fff;
+   position: relative;
+}
+.footer_wrap{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+
+@media screen and (min-width:768px) {
+    header{
+        z-index: 999;
+    }
+    .wrapper{
+        width: 765px;
+    }
+    #suitcase{
+        z-index: -9;
+    }
+    #business_cover{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    #business_img{
+        width: 48%;
+        margin: 0;
+        z-index: -9;
+    }
+    #business_suit_intro{
+        padding-top: 15%;
+        width: 48%;
+    }
+    #separate_img{
+        width: 48%;
+        z-index: -9;
+    }
+    #separate_cover{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+    #separate_intro{
+        width: 48%;
+        padding-top: 15%;
+    }
+}   
+@media screen and (min-width:960px) {
+    .wrapper{
+        width: 100%;
+    }
+    header{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 100vw;
+        height: 100px;
+        position: fixed;
+        overflow: hidden;
+    }
+    #header{
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: url('../images/jongro2.png') no-repeat center;
+        background-size: cover;
+    }
+    #header h1 {
+        display: none;
+        position: absolute;
+    }
+    #header_logo{
+        display: none;
+    }
+    header nav{
+        background-color: #ffffff00;
+        float: right;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    header nav a#toggle{
+        display: none; /*PC모드에서 토글 메뉴는 사라져야 한다 */
+    }
+    header > nav > ul{
+        display: block !important;
+        padding-top: 0;
+        background-color: #ffffff00;
+        overflow: hidden;
+    }
+    header > nav > ul > li{
+        float: left;
+        background-color: #ffffff00;
+        margin-left: 30px;
+        border-bottom: none;
+    }
+    header > nav > ul > li > a{
+        text-decoration: none;
+        color: #fff;
+
+    }
+    .active{
+        background-color: rgba(0, 0, 0, 0.7);
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        
+        -webkit-transition-duration:0.4s;
+        -webkit-transition-timing-function:ease;
+      }
+      
+    .deactive{
+        
+        background-color: transparent;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        
+        -webkit-transition-duration:0.4s;
+        -webkit-transition-timing-function:ease;
+    }
+    #welcome_intro{
+        height: 100vh;
+        position: relative;
+    }
+    #welcome_img{
+        background: url('../images/suit03.jpg') no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+    #welcome_img::after{
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+    }
+    #welcome_pass{
+        position:absolute;
+        bottom: 50px;
+        left: 100px;
+        z-index: 999;
+        color: #fff;
+    }
+    #welcome_pass h2{
+        font-size:42px;
+    }
+    #suitcase .wrapper{
+        width: 965px;
+        margin:0 auto;
+    }
+    #business_cover{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #business_suit_intro{
+        margin: 0;
+    }
+    #business_img{
+        margin: 0;
+    }
+    #passion_wrap{
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #passion_wrap #passion_img1, #passion_wrap #passion_img2{
+        width: 48%;
+    }
+    #passion_wrap #passion_img1:hover::before{
+        background-color: #00000074;
+        transition-duration: 0.6s;
+        content: "비즈니스 슈트";
+        color: #fff;
+        width: 336px;
+        height: 150px;
+        position: absolute;
+        text-align: center;
+        padding-top: 150px;
+    }
+    #passion_wrap #passion_img2:hover::before{
+        background-color: #00000074;
+        transition-duration: 0.6s;
+        content: "세퍼레이트";
+        color: #fff;
+        width: 336px;
+        height: 150px;
+        position: absolute;
+        text-align: center;
+        padding-top: 150px;
+        
+    }
+    #passion_wrap #passion_img3:hover::before{
+        background-color: #00000074;
+        transition-duration: 0.6s;
+        content: "종로의 맞춤정장";
+        color: #fff;
+        width: 700px;
+        height: 150px;
+        position: absolute;
+        text-align: center;
+        padding-top: 150px;
+        
+    }
+    
+}
